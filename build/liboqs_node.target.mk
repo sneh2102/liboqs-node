@@ -23,7 +23,6 @@ DEFS_Debug := \
 	'-DV8_DEPRECATION_WARNINGS=1' \
 	'-DV8_DEPRECATION_WARNINGS' \
 	'-DV8_IMMINENT_DEPRECATION_WARNINGS' \
-	'-D_GLIBCXX_USE_CXX11_ABI=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-D__STDC_FORMAT_MACROS' \
@@ -43,9 +42,9 @@ CFLAGS_Debug := \
 	-Wall \
 	-Wextra \
 	-Wno-unused-parameter \
+	-m64 \
 	-fexceptions \
 	-std=c++2a \
-	-m64 \
 	-g \
 	-O0
 
@@ -56,18 +55,18 @@ CFLAGS_C_Debug :=
 CFLAGS_CC_Debug := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++17 \
+	-std=gnu++1y \
 	-fexceptions \
 	-std=c++2a
 
 INCS_Debug := \
-	-I/home/sneh/.cache/node-gyp/18.20.4/include/node \
-	-I/home/sneh/.cache/node-gyp/18.20.4/src \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/openssl/config \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/openssl/openssl/include \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/uv/include \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/zlib \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/v8/include \
+	-I/home/sneh/.cache/node-gyp/14.21.3/include/node \
+	-I/home/sneh/.cache/node-gyp/14.21.3/src \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/openssl/config \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/openssl/openssl/include \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/uv/include \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/zlib \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/v8/include \
 	-I/home/sneh/Desktop/liboqs-node/node_modules/node-addon-api \
 	-I$(srcdir)/deps/liboqs/build/include \
 	-I$(srcdir)/deps/liboqs-cpp/include
@@ -79,7 +78,6 @@ DEFS_Release := \
 	'-DV8_DEPRECATION_WARNINGS=1' \
 	'-DV8_DEPRECATION_WARNINGS' \
 	'-DV8_IMMINENT_DEPRECATION_WARNINGS' \
-	'-D_GLIBCXX_USE_CXX11_ABI=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-D__STDC_FORMAT_MACROS' \
@@ -96,9 +94,9 @@ CFLAGS_Release := \
 	-Wall \
 	-Wextra \
 	-Wno-unused-parameter \
+	-m64 \
 	-fexceptions \
 	-std=c++2a \
-	-m64 \
 	-O3 \
 	-fno-omit-frame-pointer
 
@@ -109,18 +107,18 @@ CFLAGS_C_Release :=
 CFLAGS_CC_Release := \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++17 \
+	-std=gnu++1y \
 	-fexceptions \
 	-std=c++2a
 
 INCS_Release := \
-	-I/home/sneh/.cache/node-gyp/18.20.4/include/node \
-	-I/home/sneh/.cache/node-gyp/18.20.4/src \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/openssl/config \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/openssl/openssl/include \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/uv/include \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/zlib \
-	-I/home/sneh/.cache/node-gyp/18.20.4/deps/v8/include \
+	-I/home/sneh/.cache/node-gyp/14.21.3/include/node \
+	-I/home/sneh/.cache/node-gyp/14.21.3/src \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/openssl/config \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/openssl/openssl/include \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/uv/include \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/zlib \
+	-I/home/sneh/.cache/node-gyp/14.21.3/deps/v8/include \
 	-I/home/sneh/Desktop/liboqs-node/node_modules/node-addon-api \
 	-I$(srcdir)/deps/liboqs/build/include \
 	-I$(srcdir)/deps/liboqs-cpp/include
