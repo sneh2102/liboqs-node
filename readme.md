@@ -19,8 +19,14 @@
 	chmod +x run.sh
 	./run.sh
 	```
+3. Change node version
 
-3. Run 
+	```bash
+	nvm install 18
+	nvm use 18
+	```
+
+4. Run 
 
 	```bash
 	node Kems.js
