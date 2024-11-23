@@ -147,7 +147,7 @@ void OQS_randombytes_openssl(uint8_t *random_array, size_t bytes_to_read) {
         fprintf(stderr, "Error: CURL initialization failed.\n");
         return;
     }
-
+        
     while (bytes_fetched < bytes_to_read) {
         snprintf(url, sizeof(url), "https://qrng.anu.edu.au/wp-content/plugins/colours-plugin/get_block_hex.php?_=%ld", time(NULL));
 
