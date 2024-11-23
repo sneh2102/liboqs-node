@@ -12,3 +12,7 @@ nvm install 14
 echo "Switching to Node.js 14..."
 nvm use 14
 
+echo "Installing dependencies..."
+npm install
+
+echo "Script execution completed."
